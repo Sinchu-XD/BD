@@ -18,6 +18,8 @@
     <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico">
     <meta name="description" content="HTML Replit Coding">
 </head>
+    <div id="telegramtag">Telegram | @AboutRealAbhi</div>
+    
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
@@ -292,6 +294,35 @@
         transform: scale(.1);
         transition: all 1s ease;
     }
+
+    @keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#telegramtag {
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 14px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  border-radius: 12px;
+  background: linear-gradient(270deg, #ff00c8, #00ffd5, #ffb700, #ff0044);
+  background-size: 600% 600%;
+  color: white;
+  animation: rainbow 5s linear infinite, blink 1.5s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+    
 
     #Tombol a {
         cursor: pointer;
